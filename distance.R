@@ -3,7 +3,6 @@
 #vectors with length 2 and x a n*2 matrix. The function compares each row to
 #points a and b for each row in matrix x and returns a character string to which
 #the row is closer to.
-
 L1<- function(a, b, x){
   
   for(i in 1:nrow(x)){  
@@ -21,7 +20,7 @@ L1<- function(a, b, x){
 }
 
 #Function with similar characteristics as L1. However, instead of calculating the
-#Manhattan distance, this function calculates the direct distance between the points
+#Manhattan distance, this function calculates the Euclidian distance between the points
 L2<- function (a, b, x){
   
   for(i in 1:nrow(x)){  
